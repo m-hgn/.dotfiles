@@ -1,9 +1,10 @@
-.zcompdump
-.zshhistory
 .bash_history
 .bash_logout
+.zcompdump
+.zshhistory
 
 .config/btop
 .config/gh/hosts.yml
 .config/gtk*
+.config/nvim/plugin
 .config/ranger
