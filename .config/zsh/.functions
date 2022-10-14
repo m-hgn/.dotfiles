@@ -1,0 +1,39 @@
+#!/bin/zsh
+#                     oooo        
+#                     `888        
+#   oooooooo  .oooo.o  888 .oo.   
+#  d'""7d8P  d88(  "8  888P"Y88b  
+#    .d8P'   `"Y88b.   888   888  
+#  .d8P'  .P o.  )88b  888   888  
+# d8888888P  8""888P' o888o o888o 
+#                                 
+#                                 
+#                                 
+#  .o88o.                                       .    o8o                                 
+#  888 `"                                     .o8    `"'                                 
+# o888oo  oooo  oooo  ooo. .oo.    .ooooo.  .o888oo oooo   .ooooo.  ooo. .oo.    .oooo.o 
+#  888    `888  `888  `888P"Y88b  d88' `"Y8   888   `888  d88' `88b `888P"Y88b  d88(  "8 
+#  888     888   888   888   888  888         888    888  888   888  888   888  `"Y88b.  
+#  888     888   888   888   888  888   .o8   888 .  888  888   888  888   888  o.  )88b 
+# o888o    `V88V"V8P' o888o o888o `Y8bod8P'   "888" o888o `Y8bod8P' o888o o888o 8""888P' 
+#
+
+
+# -- clipboard --
+# usage: `[command] | cb`  "copy" from stdout to clipboard
+#        `cb | [command]`  "paste" from clipboard into pipe
+function cb() {
+    if command -v xclip 1>/dev/null; then
+        if [[ -p /dev/stdin ]] ; then
+            xclip -i -selection clipboard
+        else
+            xclip -o -selection clipboard
+        fi
+    else
+        echo "xclip not found."
+    fi
+}
+
+
+# -- setup specific scripts --
+export PATH=$PATH:$HOME/.scripts

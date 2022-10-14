@@ -1,0 +1,9 @@
+.zcompdump
+.zshhistory
+.bash_history
+.bash_logout
+
+.config/btop
+.config/gh/hosts.yml
+.config/gtk*
+.config/ranger

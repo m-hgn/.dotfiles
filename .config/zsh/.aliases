@@ -1,0 +1,52 @@
+#!/bin/zsh
+#                     oooo        
+#                     `888        
+#   oooooooo  .oooo.o  888 .oo.   
+#  d'""7d8P  d88(  "8  888P"Y88b  
+#    .d8P'   `"Y88b.   888   888  
+#  .d8P'  .P o.  )88b  888   888  
+# d8888888P  8""888P' o888o o888o 
+#
+#           oooo   o8o                                        
+#           `888   `"'                                        
+#  .oooo.    888  oooo   .oooo.    .oooo.o  .ooooo.   .oooo.o 
+# `P  )88b   888  `888  `P  )88b  d88(  "8 d88' `88b d88(  "8 
+#  .oP"888   888   888   .oP"888  `"Y88b.  888ooo888 `"Y88b.  
+# d8(  888   888   888  d8(  888  o.  )88b 888    .o o.  )88b 
+# `Y888""8o o888o o888o `Y888""8o 8""888P' `Y8bod8P' 8""888P' 
+#                                                             
+
+
+# -- coreutils --
+
+alias 'ls'='\ls -aFsw 80 --si --color=no'           # ls default preference
+alias '_'='\sudo '                                  # _ to sudo
+alias -- '-'='\cd -'                                # - to cd to last dir
+alias '..'='\cd ..'                                 #
+alias '...'='\cd ../..'                             #
+alias '....'='\cd ../../..'                         # cd ../../../../../../../../..
+alias '.....'='\cd ../../../..'                     #
+alias '......'='\cd ../../../../..'                 #
+alias d='\dirs -v'                                  # d to show dir stack
+for i ({1..9}) alias "$i"="cd +${i}"; unset i       # {1-9} to cd to dir from stack
+
+
+# -- git --
+
+alias 'g'='\git'                                    #
+alias 'gs'='\git status'                            #
+alias 'ga'='\git add'                               #
+alias 'gp'='\git push'                              # git
+alias 'gpom'='\git push origin master'              #
+alias 'gc'='\git commit'                            #
+
+
+# -- misc software --
+
+alias 'nv'='\sudo -E -s nvim $@'                    #
+alias ':e'='\nvim $@'                               #
+alias ':E'='\nvim $@'                               # neovim
+alias ':q'='exit'                                   #
+alias ':Q'='exit'                                   #
+
+alias 'tty-clock'='\tty-clock -c -D'                # tty-clock
