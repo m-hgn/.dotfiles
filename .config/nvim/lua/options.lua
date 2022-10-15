@@ -13,6 +13,7 @@ local options = {
 
     -- navigation
     hlsearch = true,
+    ignorecase = true,
     smartcase = true,
 
     number = true,
