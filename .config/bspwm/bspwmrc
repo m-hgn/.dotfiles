@@ -21,7 +21,7 @@ bspc config focused_border_color    '#dfb46a'
 bspc config normal_border_color     '#5c7b99'
 bspc config active_border_color     '#5c7b99'
 
-bspc config window_gap              48
+bspc config window_gap              24
 bspc config top_padding             32
 
 bspc config split_ratio             0.5
