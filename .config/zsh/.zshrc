@@ -45,5 +45,12 @@ source "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 # -- prompt --
 
 eval "$(starship init zsh)"
-printf "\n" ; PF_INFO="ascii title os shell wm editor palette" PF_SEP=":" PF_COLOR=1 PF_ASCII="linux" pfetch
+
+if command -v hitux 1>/dev/null ; then
+    printf "\n";
+    hitux --clean
+elif command -v pfetch 1>/dev/null ; then
+    printf "\n";
+    PF_INFO="ascii title os shell wm editor palette" PF_SEP=":" PF_COLOR=1 PF_ASCII="linux" pfetch
+fi
 
