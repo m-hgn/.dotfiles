@@ -40,6 +40,8 @@ alias 'gp'='\git push'                              # git
 alias 'gpom'='\git push origin master'              #
 alias 'gc'='\git commit'                            #
 
+alias 'gdp'='\git push lab && echo ""; \git push hub'
+
 
 # -- misc software --
 
