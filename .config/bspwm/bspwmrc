@@ -38,10 +38,12 @@ bspc rule -a Gimp state=floating follow=on
 
 ~/.fehbg
 
+killall -q picom
+while pgrep -u $UID -x picom >/dev/null; do sleep 0.2; done
 picom --experimental-backends &
 
 killall -q polybar
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+while pgrep -u $UID -x polybar >/dev/null; do sleep 0.2; done
 
 polybar -c '$HOME/.config/polybar/config.ini' top-main &
 polybar -c '$HOME/.config/polybar/config.ini' top-aux &
