@@ -35,15 +35,15 @@ export VIMCONFIG="$XDG_CONFIG_HOME/nvim"
 export SCREENSHOT="$HOME/Pictures/Screenshots"
 
 
-# -- dev software --
-
-. "$HOME/.cargo/env"
-
-
 # -- options --
 
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+
+# -- dev software --
+
+export HELIX_RUNTIME="$HOME/.local/share/helix/runtime"
 . "$HOME/.cargo/env"
+
 
