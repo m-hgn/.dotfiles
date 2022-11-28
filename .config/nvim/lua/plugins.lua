@@ -31,6 +31,5 @@ return packer.startup(function(use)
 -- lsp
     use "hrsh7th/nvim-cmp"                      -- completion
     use "neovim/nvim-lspconfig"                 -- enable lsp
-    use "williamboman/nvim-lsp-installer"       -- language server installer
 
 end)
