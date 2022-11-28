@@ -37,8 +37,8 @@ export SCREENSHOT="$HOME/Pictures/Screenshots"
 
 # -- options --
 
-export EDITOR="nvim"
-export VISUAL="nvim"
+export EDITOR="hx"
+export VISUAL="hx"
 
 
 # -- dev software --

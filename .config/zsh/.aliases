@@ -45,9 +45,9 @@ alias 'gdp'='\git push lab && echo ""; \git push hub'
 
 # -- misc software --
 
-alias 'nv'='\sudo -E -s nvim $@'                    #
-alias ':e'='\nvim $@'                               #
-alias ':E'='\nvim $@'                               # neovim
+alias 'shx'='\sudo hx $@'                           #
+alias ':e'='\hx $@'                                 #
+alias ':E'='\hx $@'                                 # helix
 alias ':q'='exit'                                   #
 alias ':Q'='exit'                                   #
 
