@@ -23,12 +23,6 @@ export HISTSIZE=666
 export SAVEHIST=666
 
 
-# -- path --
-
-export PATH=$PATH:'/home/mark/.local/bin'
-export PATH=$PATH:'/home/mark/.ghcup/bin'
-
-
 # -- misc software --
 
 export VIMCONFIG="$XDG_CONFIG_HOME/nvim"
@@ -44,6 +38,8 @@ export VISUAL="hx"
 # -- dev software --
 
 export HELIX_RUNTIME="$HOME/.local/share/helix/runtime"
+
+export PATH=$PATH:'$HOME/.local/bin'
+export PATH=$PATH:'$HOME/.ghcup/bin'
+export PATH=$PATH:'$HOME/.nimble/bin'
 . "$HOME/.cargo/env"
-
-
