@@ -37,6 +37,7 @@ export VISUAL="nvim"
 
 # -- dev software --
 
+export PATH=$PATH:"/usr/local/go/bin"
 export PATH=$PATH:"$HOME/.local/bin"
 export PATH=$PATH:"$HOME/.ghcup/bin"
 export PATH=$PATH:"$HOME/.nimble/bin"
