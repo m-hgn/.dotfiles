@@ -31,13 +31,11 @@ export SCREENSHOT="$HOME/Pictures/Screenshots"
 
 # -- options --
 
-export EDITOR="hx"
-export VISUAL="hx"
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 
 # -- dev software --
-
-export HELIX_RUNTIME="$HOME/.local/share/helix/runtime"
 
 export PATH=$PATH:"$HOME/.local/bin"
 export PATH=$PATH:"$HOME/.ghcup/bin"
