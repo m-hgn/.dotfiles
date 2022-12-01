@@ -34,7 +34,8 @@ bspc config focus_follows_pointer   false
 xsetroot -cursor_name left_ptr &
 
 
-bspc rule -a Gimp state=floating follow=on
+bspc rule -a Gimp state=floating 
+bspc rule -a Emacs state=tiled
 
 ~/.fehbg
 
