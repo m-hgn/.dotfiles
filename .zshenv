@@ -39,7 +39,7 @@ export VISUAL="hx"
 
 export HELIX_RUNTIME="$HOME/.local/share/helix/runtime"
 
-export PATH=$PATH:'$HOME/.local/bin'
-export PATH=$PATH:'$HOME/.ghcup/bin'
-export PATH=$PATH:'$HOME/.nimble/bin'
+export PATH=$PATH:"$HOME/.local/bin"
+export PATH=$PATH:"$HOME/.ghcup/bin"
+export PATH=$PATH:"$HOME/.nimble/bin"
 . "$HOME/.cargo/env"
