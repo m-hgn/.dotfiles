@@ -54,3 +54,11 @@ elif command -v pfetch 1>/dev/null ; then
     PF_INFO="ascii title os shell wm editor palette" PF_SEP=":" PF_COLOR=1 PF_ASCII="linux" pfetch
 fi
 
+
+# -- dev paths --
+
+. "$HOME/.cargo/env"
+[ -f "/home/mark/.ghcup/env" ] && source "/home/mark/.ghcup/env" # ghcup-env
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
