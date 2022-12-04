@@ -5,7 +5,9 @@ if not ok then
     return
 end
 
+lspconfig.bashls.setup{}
 lspconfig.clangd.setup{}
+lspconfig.gopls.setup{}
 lspconfig.hls.setup{}
 lspconfig.nimls.setup{}
 lspconfig.pylsp.setup{}
