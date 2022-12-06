@@ -16,13 +16,13 @@ local options = {
     ignorecase = true,
     smartcase = true,
 
-    number = true,
-    numberwidth = 4,
+    number = false,
+    numberwidth = 8,
     relativenumber = true,
-    signcolumn = "yes",
 
-    scrolloff = 8,
-    sidescrolloff = 16,
+    sidescroll = 32,
+    scrolloff = 16,
+    sidescrolloff = 10,
     wrap = false,
     
     splitbelow = true,
@@ -41,7 +41,7 @@ local options = {
     -- visual options
     cmdheight = 2,
     completeopt = { "menuone", "noselect" },
-    pumheight = 10,
+    pumheight = 20,
     showmode = false,
     showtabline = 2,
     -- termguicolors = true,
@@ -52,7 +52,5 @@ for k, v in pairs(options) do
     vim.opt[k] = v
 end
 
-
-vim.cmd "set whichwrap+=<,>,[,],h,l"
+vim.cmd [[set whichwrap+=<,>,[,],h,l]]
 vim.cmd [[set iskeyword+=-]]
-
