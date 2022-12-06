@@ -18,8 +18,8 @@ map("n", "<leader>e", ":Lex 30<cr>", opts)
 map("n", "<leader>y", ":%y+<cr>", opts)
 map("n", "<leader>d", "\"_d", opts)
 
-map("n", "<c-d>", "<c-d>zz", opts)
-map("n", "<c-u>", "<c-u>zz", opts)
+map("n", "<c-d>", "10<c-d>zz", opts)
+map("n", "<c-u>", "10<c-u>zz", opts)
 
 map("n", "H", ":bprevious<cr>", opts)
 map("n", "L", ":bnext<cr>", opts)
