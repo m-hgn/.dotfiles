@@ -12,6 +12,8 @@ require("packer")
 
     vim.cmd([[colorscheme yami]])
     -- vim.cmd [[highlight Normal ctermbg=NONE]]
+    vim.cmd [[highlight NonText ctermfg=14 guifg=#666666]]
+    vim.cmd [[highlight Whitespace ctermfg=14 guifg=#666666]]
     -- vim.cmd [[highlight LineNr ctermbg=NONE]]
     -- vim.cmd [[highlight clear SignColumn]]
     -- vim.cmd [[highlight clear Tabline]]
