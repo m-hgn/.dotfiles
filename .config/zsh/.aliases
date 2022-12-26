@@ -19,7 +19,7 @@
 
 # -- coreutils --
 
-alias 'ls'='\ls -aFsw 80 --si --color=no'           # ls default preference
+alias 'ls'='\ls -aFsw 80 --si --color=auto'         # ls default preference
 alias '_'='\sudo '                                  # _ to sudo
 alias -- '-'='\cd -'                                # - to cd to last dir
 alias '..'='\cd ..'                                 #
