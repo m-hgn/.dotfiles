@@ -51,7 +51,7 @@ for k, v in pairs(options) do
     vim.opt[k] = v
 end
 
-vim.opt.listchars:append("space:·,multispace:·   ,tab:> ,trail:·,eol:↵") 
+vim.opt.listchars:append("multispace:·   ,tab:> ,trail:·,eol:↵") 
 vim.opt.list = true
 
 vim.cmd [[set whichwrap+=<,>,[,],h,l]]
