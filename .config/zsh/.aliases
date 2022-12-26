@@ -36,7 +36,8 @@ for i ({1..9}) alias "$i"="cd +${i}"; unset i       # {1-9} to cd to dir from st
 alias 'g'='\git'                                    #
 alias 'gs'='\git status'                            #
 alias 'ga'='\git add'                               #
-alias 'gp'='\git push'                              # git
+alias 'gd'='\git diff'                              # git
+alias 'gp'='\git push'                              #
 alias 'gpom'='\git push origin master'              #
 alias 'gc'='\git commit'                            #
 
